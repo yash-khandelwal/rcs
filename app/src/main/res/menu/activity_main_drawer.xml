@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <item android:title="Dashboard">
+        <menu>
+        <item
+                android:id="@+id/nav_camera"
+                android:icon="@drawable/plan_journey2"
+                android:title="Plan Journey"/>
+        <item
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/my_bookings2"
+                android:title="My Bookings"/>
+        <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/user_guide2"
+                android:title="User Guide"/>
+        </menu>
+    </item>
+
+    <item android:title="Quick Links">
+        <menu>
+            <item
+                    android:id="@+id/nav_manage"
+                    android:icon="@drawable/cancel_ticket"
+                    android:title="Cancel Ticket"/>
+        </menu>
+    </item>
+    <item android:title="Account">
+        <menu>
+            <item
+                    android:id="@+id/account_myaccount"
+                    android:icon="@drawable/my_account"
+                    android:title="My Account"/>
+            <item
+                    android:id="@+id/account_settings"
+                    android:icon="@drawable/settings"
+                    android:title="Settings"/>
+
+            <item
+                    android:id="@+id/account_signout"
+                    android:icon="@drawable/sign_out"
+                    android:title="Sign out"/>
+        </menu>
+    </item>
+    <item android:title="More">
+        <menu>
+            <item
+                    android:id="@+id/more_contact_us"
+                    android:icon="@drawable/contact_us"
+                    android:title="Contact us"/>
+            <item
+                    android:id="@+id/more_aboutus"
+                    android:icon="@drawable/logo_rcs"
+                    android:title="About us"/>
+            <item
+                    android:id="@+id/more_rateus"
+                    android:icon="@drawable/rate_us"
+                    android:title="Rate us"/>
+        </menu>
+    </item>
+
+</menu>

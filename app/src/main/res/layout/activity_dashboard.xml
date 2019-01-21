@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Dashboard">
+
+    <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="Dashboard"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:background="#CFCCCC">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:background="#ff828689">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="40dp"
+                          android:layout_marginTop="60dp"
+                          android:orientation="horizontal"
+                          android:background="@drawable/round_corner_1"
+            >
+                <Button android:layout_width="0.0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_corner"
+                        android:layout_margin="3dp"
+                        android:text="one way"
+                        android:textColor="@color/WHITE"/>
+                <Button android:layout_width="0.0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_corner"
+                        android:layout_margin="3dp"
+                        android:text="round trip"
+                        android:textColor="@color/WHITE"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="150dp"
+                          android:layout_marginTop="5dp"
+                          android:orientation="horizontal"
+
+            >
+                <Button android:layout_width="0.0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="from"
+                        android:gravity="center"
+                        android:textSize="50sp"
+                        android:background="#ff828689"
+                        android:textColor="@color/WHITE"
+                />
+                <RelativeLayout android:layout_width="45.0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_centerHorizontal="true"
+                                android:background="#ff828689">
+                    <ImageView android:background="@drawable/dash_arrow"
+                               android:layout_width="35dp"
+                               android:layout_height="35dp"
+                               android:adjustViewBounds="true"
+                               android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <Button android:layout_width="0.0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#ff828689"
+                        android:text="to"
+                        android:gravity="center"
+                        android:textSize="50sp"
+                        android:textColor="@color/WHITE"
+                />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:orientation="horizontal"
+                      android:background="#D3AFCFE7">
+            <TextView android:layout_width="0.dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="NEW DELHI"
+                      android:textSize="30sp"
+                      android:gravity="center"
+                      android:textColor="@color/WHITE"
+                      android:background="@drawable/round_corner_3"
+
+            />
+            <TextView android:layout_width="0.dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="KOLKATA"
+                      android:gravity="center"
+                      android:textSize="30sp"
+                      android:textColor="@color/WHITE"
+                      android:background="@drawable/round_corner_3"
+            />
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="100dp"
+                      android:orientation="horizontal"
+                      android:background="@drawable/round_corner_3">
+            <Button android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="3/1"
+                    android:textColor="@color/WHITE"
+                    android:textSize="50sp"
+                    android:background="#001D33"
+
+            />
+            <Button android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#001D33"
+                    android:text="9/1"
+                    android:textColor="@color/WHITE"
+                    android:textSize="50sp"
+            />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:layout_marginTop="30dp"
+                      android:orientation="horizontal">
+
+            <Button
+                    android:text="Economy"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button2"
+                    android:background="#778899"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            <CheckBox
+                    android:text="Select LTC"
+                    android:background="#778899"
+                    android:layout_margin="10dp"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBox2"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+        <Button
+                android:text="search"
+                android:textSize="30sp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="60dp"
+                android:id="@+id/button3"
+                android:gravity="center"
+                android:background="@drawable/round_corner_4"/>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/navigation"/>
+
+</android.support.constraint.ConstraintLayout>
